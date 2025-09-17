@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+@theme {
+  --text-tiny: 0.625rem;
+  --text-small: 0.75rem;
+  --text-medium: 0.875rem;
+}
+
+@layer utilities {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    @apply appearance-none;
+  }
+}
